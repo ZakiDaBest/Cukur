@@ -12,169 +12,266 @@
             background-color: #f8fafc;
         }
         .chat-card {
-            transition: transform 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
         .chat-card:hover {
             transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
         .glass-effect {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .month-title {
+            position: relative;
+            padding-left: 1rem;
+        }
+        .month-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #f97316, #dc2626);
+            border-radius: 2px;
         }
     </style>
 </head>
 <body class="text-slate-800">
 
     <!-- Header -->
-    <header class="sticky top-0 z-50 glass-effect border-b border-slate-200 py-4 px-6 mb-8">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">
-                CUKURUK 🐔 Moments
+    <header class="sticky top-0 z-50 glass-effect py-4 px-6 mb-8">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent flex items-center gap-2">
+                <span>CUKURUK 🐔</span> <span class="hidden sm:inline">Moments</span>
             </h1>
-            <div class="text-xs font-medium bg-orange-100 text-orange-700 px-3 py-1 rounded-full uppercase tracking-wider">
+            <div class="text-xs font-bold bg-orange-100 text-orange-700 px-3 py-1 rounded-full uppercase tracking-widest">
                 Arsip 2025
             </div>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 pb-20">
+    <main class="max-w-6xl mx-auto px-6 pb-20">
         
         <!-- JANUARI -->
-        <section class="mb-12">
-            <div class="flex items-center gap-4 mb-6">
-                <h2 class="text-xl font-bold text-slate-900">Januari 2025</h2>
-                <div class="h-[2px] flex-1 bg-slate-200"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+        <section class="mb-16">
+            <h2 class="month-title text-2xl font-extrabold text-slate-900 mb-6">Januari 2025</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">09/01/25 • 12.15</span>
-                        <span class="px-2 py-1 bg-blue-50 text-blue-600 text-[10px] rounded uppercase font-bold">Religius Lucu</span>
+                        <span class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] rounded uppercase font-bold">Jetlag</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Arya vs Mumtaz (Zona Waktu)</p>
-                    <p class="text-sm text-slate-600 italic">"Arya godain Uta yang Umroh. Arya sudah adzan dzuhur, Uta di Arab masih jam 8 pagi, baru sarapan."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Arya vs Mumtaz (Zona Waktu)</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Arya sudah adzan dzuhur, Uta di Arab baru jam 8 pagi. Perbedaan 4 jam bikin bingung jadwal sholat."</p>
                 </div>
 
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">09/01/25 • 13.26</span>
-                        <span class="px-2 py-1 bg-pink-50 text-pink-600 text-[10px] rounded uppercase font-bold">Imitasi</span>
+                        <span class="px-2 py-0.5 bg-pink-50 text-pink-600 text-[10px] rounded uppercase font-bold">Imitasi</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Ishh Geramnye Akuwh 😡</p>
-                    <p class="text-sm text-slate-600 italic">"Mumtaz ngomong gemas, langsung dibalas Arya dengan versi 'I-semua': 'Ish Girimnyi Iki'."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Ishh Geramnye Akuwh 😡</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Mumtaz ngomong gemas, langsung diplesetin Arya jadi versi vokal 'I' semua: 'Ish Girimnyi Iki'."</p>
                 </div>
 
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">10/01/25 • 17.29</span>
+                        <span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded uppercase font-bold">Jumatan</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Ceramah Ghoib</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Mumtaz jumatan di Arab: 'Cukup didengarkan saja, padahal ga mudeng apa yang dibicarakan' 😹."</p>
+                </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">14/01/25 • 08.02</span>
-                        <span class="px-2 py-1 bg-red-50 text-red-600 text-[10px] rounded uppercase font-bold">Drama Polisi</span>
+                        <span class="px-2 py-0.5 bg-red-50 text-red-600 text-[10px] rounded uppercase font-bold">Polisi</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Tragedi Mobil Arab</p>
-                    <p class="text-sm text-slate-600 italic">"Rombongan Uta dituduh nabrak mobil warga lokal tanpa bukti sampe harus urusan sama polisi Arab."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Fitnah Mobil Arab</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Rombongan Uta dituduh nabrak mobil warga lokal tanpa bukti sampe harus ke kantor polisi."</p>
                 </div>
 
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">17/01/25 • 07.18</span>
+                        <span class="px-2 py-0.5 bg-zinc-100 text-zinc-600 text-[10px] rounded uppercase font-bold">Bolos</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Meja Rafif Melayang</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Gara-gara Rafif bolos, Arya nyaranin meja dan kursinya dibuang aja sekalian."</p>
+                </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">17/01/25 • 10.04</span>
+                        <span class="px-2 py-0.5 bg-yellow-50 text-yellow-600 text-[10px] rounded uppercase font-bold">Proyek</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Dinamo High Voltage</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Arya bilang dinamo Uta tegangannya 100 volt. Padahal cuma buat alat pemotong cabe sekolah."</p>
+                </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">17/01/25 • 20.59</span>
+                        <span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-[10px] rounded uppercase font-bold">Kamar Mandi</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Kecoa Pengintai</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Uta lagi enak-enak BAB, tiba-tiba muncul kecoa raksasa bikin dia kocar-kacir telanjang kaki."</p>
+                </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">21/01/25 • 08.22</span>
+                        <span class="px-2 py-0.5 bg-teal-50 text-teal-600 text-[10px] rounded uppercase font-bold">Out of Context</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Angsa di Celana 🪿</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Arya godain Varo soal 'tonjolan' di foto, dijawab Uta itu sebenarnya cuma seekor angsa."</p>
+                </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">21/01/25 • 20.26</span>
-                        <span class="px-2 py-1 bg-purple-50 text-purple-600 text-[10px] rounded uppercase font-bold">Formalitas</span>
+                        <span class="px-2 py-0.5 bg-purple-50 text-purple-600 text-[10px] rounded uppercase font-bold">Sangat Elit</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Izin Sakit Elit</p>
-                    <p class="text-sm text-slate-600 italic">"Mumtaz izin sakit ke Varo pakai bahasa super formal: 'Yang saya muliakan, Bung @Ambavaro...'."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Bung Varo yang Mulia</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Izin sakit paling formal: 'Yang saya muliakan, Bung @Ambavaro...'. Kaku kayak surat kenegaraan."</p>
                 </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">24/01/25 • 10.01</span>
+                        <span class="px-2 py-0.5 bg-sky-50 text-sky-600 text-[10px] rounded uppercase font-bold">Opsi Mudik</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Gendong Lewat Tol</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Arya nawarin Uta balik ke Jakarta naik Buroq atau digendong lari lewat jalan tol."</p>
+                </div>
+
             </div>
         </section>
 
         <!-- FEBRUARI -->
-        <section class="mb-12">
-            <div class="flex items-center gap-4 mb-6">
-                <h2 class="text-xl font-bold text-slate-900">Februari 2025</h2>
-                <div class="h-[2px] flex-1 bg-slate-200"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+        <section class="mb-16">
+            <h2 class="month-title text-2xl font-extrabold text-slate-900 mb-6">Februari 2025</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">08/02/25 • 20.49</span>
-                        <span class="px-2 py-1 bg-yellow-50 text-yellow-600 text-[10px] rounded uppercase font-bold">Gofood Fail</span>
+                        <span class="px-2 py-0.5 bg-orange-50 text-orange-600 text-[10px] rounded uppercase font-bold">Maling Ayam</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Salah Ambil Sayap</p>
-                    <p class="text-sm text-slate-600 italic">"Arya salah ambil GoFood tetangga. Isinya sayap ayam semua, padahal dia nggak doyan."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Duka Sayap Tetangga</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Arya salah ambil GoFood tetangga. Isinya sayap semua, padahal dia benci sayap ayam."</p>
                 </div>
 
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">11/02/25 • 19.41</span>
+                        <span class="px-2 py-0.5 bg-stone-100 text-stone-600 text-[10px] rounded uppercase font-bold">Jaga Rumah</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Kejar Omah Mu</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Godain Uta yang lagi jaga rumah sendirian: 'Kabur po omah mu? Kejer ta'."</p>
+                </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">18/02/25 • 13.03</span>
+                        <span class="px-2 py-0.5 bg-gray-50 text-gray-500 text-[10px] rounded uppercase font-bold">Garing</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Joke Bawakdehewak</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Arya: 'Bawang kalo ng-nya diilangin jadi apa? Bawakdehewak'. Krik krik banget."</p>
+                </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">19/02/25 • 20.02</span>
-                        <span class="px-2 py-1 bg-green-50 text-green-600 text-[10px] rounded uppercase font-bold">Sejarah</span>
+                        <span class="px-2 py-0.5 bg-green-50 text-green-600 text-[10px] rounded uppercase font-bold">Vintage</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Kelahiran 1293</p>
-                    <p class="text-sm text-slate-600 italic">"Mumtaz ngaku lahir tahun 1293 pas zaman Kesultanan Turki Utsmani baru berdiri."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Sesepuh Turki</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Mumtaz ngaku lahir tahun 1293 pas Kesultanan Turki Utsmani lagi baru-barunya buka cabang."</p>
                 </div>
+
             </div>
         </section>
 
         <!-- MARET - JUNI -->
-        <section class="mb-12">
-            <div class="flex items-center gap-4 mb-6">
-                <h2 class="text-xl font-bold text-slate-900">Maret - Juni 2025</h2>
-                <div class="h-[2px] flex-1 bg-slate-200"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+        <section class="mb-16">
+            <h2 class="month-title text-2xl font-extrabold text-slate-900 mb-6">Maret - Juni 2025</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">01/03/25 • 18.00</span>
-                        <span class="px-2 py-1 bg-blue-50 text-blue-600 text-[10px] rounded uppercase font-bold">Puasa Hacks</span>
+                        <span class="px-2 py-0.5 bg-emerald-50 text-emerald-600 text-[10px] rounded uppercase font-bold">Ramadhan</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Anti Haus Mumtaz</p>
-                    <p class="text-sm text-slate-600 italic">"Tips puasa: 'Siang mending turu (tidur), dijamin tidak kehausan 😂'."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Mode Hemat Energi</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Tips puasa anti-haus: 'Siang mending turu ro (tidur aja), dijamin lupa rasa haus 😂'."</p>
                 </div>
 
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">11/03/25 • 19.36</span>
+                        <span class="px-2 py-0.5 bg-rose-50 text-rose-600 text-[10px] rounded uppercase font-bold">Chaos</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Perang Nama Grup</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Nama grup gonta-ganti gila-gilaan: Grup Nguwawor, MuMtIZ d3 GaNK, sampe Generasi (C)Emas."</p>
+                </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">03/06/25 • 17.51</span>
-                        <span class="px-2 py-1 bg-indigo-50 text-indigo-600 text-[10px] rounded uppercase font-bold">Ancaman</span>
+                        <span class="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] rounded uppercase font-bold">Ancaman</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Barak Militer Pak Dedi</p>
-                    <p class="text-sm text-slate-600 italic">"Uta ngadu ke Pak Dedi supaya Arya dimasukin asrama militer setahun gara-gara sering bikin stiker muka orang."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Wamil Pak Dedi</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Uta ngadu ke guru supaya Arya dimasukkan barak militer gara-gara jadi bandar stiker aib."</p>
                 </div>
+
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-xs font-bold text-orange-500">15/06/25 • 19.03</span>
+                        <span class="px-2 py-0.5 bg-indigo-50 text-indigo-600 text-[10px] rounded uppercase font-bold">Olahraga</span>
+                    </div>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Voli Jumbo 1vs6</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Arya ngajak Uta tanding voli jumbo sendirian lawan 6 orang. Auto remuk badannya."</p>
+                </div>
+
             </div>
         </section>
 
         <!-- SEPTEMBER - DESEMBER -->
-        <section class="mb-12">
-            <div class="flex items-center gap-4 mb-6">
-                <h2 class="text-xl font-bold text-slate-900">September - Desember 2025</h2>
-                <div class="h-[2px] flex-1 bg-slate-200"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+        <section class="mb-16">
+            <h2 class="month-title text-2xl font-extrabold text-slate-900 mb-6">September - Desember 2025</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">22/09/25 • 07.09</span>
-                        <span class="px-2 py-1 bg-cyan-50 text-cyan-600 text-[10px] rounded uppercase font-bold">Bisnis</span>
+                        <span class="px-2 py-0.5 bg-cyan-50 text-cyan-600 text-[10px] rounded uppercase font-bold">UMKM</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Rental Payung Uta</p>
-                    <p class="text-sm text-slate-600 italic">"Mumtaz buka jasa sewa payung: 8rb per hari atau paket langganan 25rb per minggu."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Sewa Payung Uta</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Bisnis baru: Rental payung harian 8rb, mingguan 25rb. Belum termasuk denda kalo hilang."</p>
                 </div>
 
-                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+                <div class="chat-card bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col">
                     <div class="flex justify-between items-start mb-3">
                         <span class="text-xs font-bold text-orange-500">02/12/25 • 21.19</span>
-                        <span class="px-2 py-1 bg-emerald-50 text-emerald-600 text-[10px] rounded uppercase font-bold">AI Cringe</span>
+                        <span class="px-2 py-0.5 bg-violet-50 text-violet-600 text-[10px] rounded uppercase font-bold">Modern</span>
                     </div>
-                    <p class="text-sm font-semibold mb-1 text-slate-700">Template Meta AI</p>
-                    <p class="text-sm text-slate-600 italic">"Zufar pakai Meta AI buat bikin ucapan terima kasih oleh-oleh ke Varo, bahasanya kaku banget kayak bot."</p>
+                    <p class="text-sm font-bold mb-2 text-slate-800">Robot Zufar</p>
+                    <p class="text-sm text-slate-600 italic leading-relaxed">"Zufar maksa Meta AI buat bikin ucapan makasih ke Varo. Hasilnya? Kaku kayak instruksi manual."</p>
                 </div>
+
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-slate-500 text-sm">
+    <footer class="bg-white border-t border-slate-200 py-10 text-center text-slate-400 text-sm">
         <p>Dibuat untuk mengenang kegilaan grup <b>CUKURUK 🐔</b></p>
-        <p class="mt-1">Copyright &copy; 2025 Semarang Intellectual Youth</p>
+        <p class="mt-1">Copyright © 2025 Semarang Intellectual Youth</p>
     </footer>
 
 </body>
